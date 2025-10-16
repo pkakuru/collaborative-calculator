@@ -15,6 +15,10 @@ def get_numbers():
 
     return numbers
 
+def add_numbers(numbers):
+    # Add all numbers in the list
+    return sum(numbers)
+
 
 def main():
     """
@@ -38,7 +42,8 @@ def main():
     choice = input("Enter your choice 1 or 2: ").strip()
 
     if choice == "1":
-        print("Addition feature by Francis coming soon")
+        result = add_numbers(numbers)
+        print(f"\n result: {'+'.join(map(str,numbers))} = {result}")
     elif choice == "2":
         print("Multiplication feature by Gift coming soon")
 
