@@ -15,6 +15,13 @@ def get_numbers():
 
     return numbers
 
+def multiply_numbers(numbers):
+    #Multiply all numbers in the list
+    result = 1
+    for number in numbers:
+        result *= number # result = result * number
+    
+    return result
 
 def main():
     """
@@ -40,7 +47,8 @@ def main():
     if choice == "1":
         print("Addition feature by Francis coming soon")
     elif choice == "2":
-        print("Multiplication feature by Gift coming soon")
+        result = multiply_numbers(numbers)
+        print(f"\n result: {' x '.join(map(str,numbers))} = {result}")
 
     else:
         print("Invalid choice. Please select 1 or 2.")
