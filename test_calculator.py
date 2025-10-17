@@ -1,5 +1,5 @@
 import pytest
-from calculator import get_numbers, add_numbers
+from calculator import get_numbers, add_numbers, multiply_numbers
 from unittest.mock import patch
 
 
@@ -14,3 +14,9 @@ def test_add_positive_numbers():
     numbers = [1, 2, 3, 4.5]
     expected_sum = 10.5
     assert add_numbers(numbers) == expected_sum
+
+
+def test_multiply_positive_numbers():
+    numbers = [1, 2, 3, 4]
+    expected_product = 24
+    assert multiply_numbers(numbers) == expected_product
