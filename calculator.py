@@ -44,7 +44,7 @@ def main():
 
     if choice == "1":
         result = add_numbers(numbers)
-        print(f"\n result: {'+'.join(map(str,numbers))} = {result}")
+        print(f"\n result: {'+'.join(map(str, numbers))} = {result}")
     elif choice == "2":
         print("Multiplication feature by Gift coming soon")
 
