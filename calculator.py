@@ -15,6 +15,7 @@ def get_numbers():
 
     return numbers
 
+
 def add_numbers(numbers):
     # Add all numbers in the list
     return sum(numbers)
