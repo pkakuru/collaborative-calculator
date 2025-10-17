@@ -15,13 +15,15 @@ def get_numbers():
 
     return numbers
 
+
 def multiply_numbers(numbers):
-    #Multiply all numbers in the list
+    # Multiply all numbers in the list
     result = 1
     for number in numbers:
-        result *= number # result = result * number
-    
+        result *= number  # result = result * number
+
     return result
+
 
 def add_numbers(numbers):
     # Add all numbers in the list
@@ -54,7 +56,7 @@ def main():
         print(f"\n result: {'+'.join(map(str, numbers))} = {result}")
     elif choice == "2":
         result = multiply_numbers(numbers)
-        print(f"\n result: {' x '.join(map(str,numbers))} = {result}")
+        print(f"\n result: {' x '.join(map(str, numbers))} = {result}")
 
     else:
         print("Invalid choice. Please select 1 or 2.")
